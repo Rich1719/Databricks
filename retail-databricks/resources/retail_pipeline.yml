@@ -23,3 +23,5 @@ resources:
           notebook_task:
             notebook_path: ../notebooks/gold/Retail_Org_Gold.ipynb
             source: GIT
+            base_parameters:
+              retail_env: ${bundle.target}
