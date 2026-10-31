@@ -5,6 +5,14 @@ bundle:
 workspace:
   root_path: /Workspace/Users/${workspace.current_user.userName}/.bundle/${bundle.name}/${bundle.target}
 
+include:
+  - resources/*.yml
+
+sync:
+  include:
+    - notebooks/**
+    - src/**
+
 targets:
   dev:
     mode: development
