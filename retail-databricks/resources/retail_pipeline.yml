@@ -12,21 +12,21 @@ resources:
       tasks:
         - task_key: bronze
           notebook_task:
-            notebook_path: /retail-databricks/notebooks/bronze/Retail_Org_Bronze
+            notebook_path: retail-databricks/notebooks/bronze/Retail_Org_Bronze
             source: GIT
 
         - task_key: silver
           depends_on:
             - task_key: bronze
           notebook_task:
-            notebook_path: /retail-databricks/notebooks/silver/Retail_Org_Silver
+            notebook_path: retail-databricks/notebooks/silver/Retail_Org_Silver
             source: GIT
 
         - task_key: gold
           depends_on:
             - task_key: silver
           notebook_task:
-            notebook_path: /retail-databricks/notebooks/gold/Retail_Org_Gold
+            notebook_path: retail-databricks/notebooks/gold/Retail_Org_Gold
             source: GIT
             base_parameters:
               retail_env: ${bundle.target}
