@@ -9,7 +9,6 @@ sync:
   include:
     - notebooks/**
     - src/**
-    - data/**
 
 variables:
   schedule_cron:
