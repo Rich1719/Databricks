@@ -12,6 +12,9 @@ sync:
   include:
     - notebooks/**
     - src/**
+ variables:
+  schedule_cron:
+    description: "Daily pipeline execution time"
 
 targets:
   dev:
