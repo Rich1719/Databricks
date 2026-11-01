@@ -14,6 +14,8 @@ resources:
           notebook_task:
             notebook_path: retail-databricks/notebooks/bronze/Retail_Org_Bronze
             source: GIT
+            base_parameters:
+              retail_env: ${bundle.target}
 
         - task_key: silver
           depends_on:
@@ -21,6 +23,8 @@ resources:
           notebook_task:
             notebook_path: retail-databricks/notebooks/silver/Retail_Org_Silver
             source: GIT
+            base_parameters:
+              retail_env: ${bundle.target}
 
         - task_key: gold
           depends_on:
