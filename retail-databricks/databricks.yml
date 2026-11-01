@@ -16,9 +16,16 @@ sync:
 targets:
   dev:
     mode: development
+    default: true
+    variables:
+      schedule_cron: "0 30 8 * * ?"
 
   test:
     mode: production
+    variables:
+      schedule_cron: "0 30 8 * * ?"
 
   prod:
     mode: production
+    variables:
+      schedule_cron: "0 30 8 * * ?"
