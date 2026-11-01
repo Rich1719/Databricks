@@ -19,20 +19,20 @@ targets:
     mode: development
     default: true
     workspace:
-       root_path: /Workspace/Users/${workspace.current_user.userName}/.bundle/${bundle.name}/${bundle.target}
-      variables:
-        schedule_cron: "0 0 9 * * ?"
+      root_path: /Workspace/Users/${workspace.current_user.userName}/.bundle/${bundle.name}/${bundle.target}
+    variables:
+      schedule_cron: "0 0 9 * * ?"
 
   test:
     mode: production
     workspace:
-        root_path: /Workspace/Users/${workspace.current_user.userName}/.bundle/${bundle.name}/${bundle.target}
-      variables:
-         schedule_cron: "0 0 9 * * ?"
+      root_path: /Workspace/Users/${workspace.current_user.userName}/.bundle/${bundle.name}/${bundle.target}
+    variables:
+      schedule_cron: "0 0 9 * * ?"
 
   prod:
     mode: production
     workspace:
-       root_path: /Workspace/Users/${workspace.current_user.userName}/.bundle/${bundle.name}/${bundle.target}
-      variables:
+      root_path: /Workspace/Users/${workspace.current_user.userName}/.bundle/${bundle.name}/${bundle.target}
+    variables:
       schedule_cron: "0 0 9 * * ?"
