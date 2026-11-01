@@ -12,7 +12,8 @@ sync:
   include:
     - notebooks/**
     - src/**
- variables:
+
+variables:
   schedule_cron:
     description: "Daily pipeline execution time"
 
@@ -21,14 +22,14 @@ targets:
     mode: development
     default: true
     variables:
-      schedule_cron: "0 30 8 * * ?"
+      schedule_cron: "0 0 9 * * ?"
 
   test:
     mode: production
     variables:
-      schedule_cron: "0 30 8 * * ?"
+      schedule_cron: "0 0 9 * * ?"
 
   prod:
     mode: production
     variables:
-      schedule_cron: "0 30 8 * * ?"
+      schedule_cron: "0 0 9 * * ?"
